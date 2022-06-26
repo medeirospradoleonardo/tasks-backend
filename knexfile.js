@@ -14,8 +14,8 @@ module.exports = {
   //   database: 'iaffojud'
   // },
   connection: {
-    url: process.env.DATABASE_URL,
-    charset: 'utf8',
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false },
   },
   pool: {
     min: 2,
