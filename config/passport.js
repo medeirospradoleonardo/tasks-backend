@@ -1,6 +1,4 @@
 const authSecret = process.env.authSecret
-console.log(process.env.authSecret)
-console.log("oi")
 const passport = require('passport')
 const passportJwt = require('passport-jwt')
 const { Strategy, ExtractJwt } = passportJwt
